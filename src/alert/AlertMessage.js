@@ -50,9 +50,6 @@ class AlertMessage extends Component {
 
     return (
       <Alert glam={{dark}}>
-        <IconPlaceholder>
-          {icon || <Icon glam={{type}} />}
-        </IconPlaceholder>
         <Message>
           {message}
         </Message>
