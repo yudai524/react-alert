@@ -17,6 +17,7 @@
     "react-component"
   ],
   "scripts": {
+    "prepare": "babel src --out-dir dist --ignore *.spec.js,*.snap",
     "build": "babel src --out-dir dist --ignore *.spec.js,*.snap",
     "build:watch": "babel src --out-dir dist --watch --ignore *.spec.js,*.snap",
     "lint": "standard --fix",
