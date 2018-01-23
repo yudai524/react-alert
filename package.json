@@ -17,9 +17,9 @@
     "react-component"
   ],
   "scripts": {
-    "prepare": "babel src --out-dir dist --ignore *.spec.js,*.snap",
     "build": "babel src --out-dir dist --ignore *.spec.js,*.snap",
     "build:watch": "babel src --out-dir dist --watch --ignore *.spec.js,*.snap",
+    "postinstall": "postinstall-build dist",
     "lint": "standard --fix",
     "test": "standard --fix && jest --coverage --no-cache",
     "test:watch": "standard --fix && jest --watch --coverage --no-cache"
@@ -72,6 +72,7 @@
     "glamor": "^2.20.24",
     "glamorous": "^3.13.1",
     "nanoid": "^0.2.2",
+    "postinstall-build": "^5.0.1",
     "react-transition-group": "^1.1.2"
   }
 }
